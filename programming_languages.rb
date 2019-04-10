@@ -33,14 +33,15 @@ languages = {
 
 combined = languages[:oo].merge(languages[:functional])
 #iterate over combined and check languages hash if its oo or functional if it is add symbol to :style =>
-languages[:oo].map do |k, v| 
-  if combined.include?(k) 
-  combined[k].merge!(:style => [:oo]) 
-    end
-  end
+
 languages[:functional].map do |k, v| 
   if combined.include?(k) 
   combined[k].merge!(:style => [:functional]) 
+    end
+  end  
+languages[:oo].map do |k, v| 
+  if combined.include?(k) 
+  combined[k].merge!(:style => [:oo]) 
     end
   end  
 binding.pry
