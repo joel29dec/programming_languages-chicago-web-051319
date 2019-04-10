@@ -44,9 +44,9 @@ languages[:oo].map do |k, v|
   combined[k].merge!(:style => [:oo]) 
     end
   end
-
+combined[:javascript][:style] << :functional
 binding.pry
-k.each {|k, v| puts v}
+
 
 def reformat_languages(languages)
   new_hash = {}
