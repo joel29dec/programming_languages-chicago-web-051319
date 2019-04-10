@@ -40,7 +40,7 @@ languages[:oo].map do |k, v|
   end
 languages[:functional].map do |k, v| 
   if combined.include?(k) 
-  combined[k].merge(:style => [:functional]) 
+  combined[k].merge!(:style => [:functional]) 
     end
   end  
 binding.pry
