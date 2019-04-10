@@ -31,7 +31,7 @@ languages = {
   }
 }
 
-combined = languages[:oo].merge(languages[:functional])
+new_hash = {languages[:oo].merge(languages[:functional])}
 binding.pry
 
 def reformat_languages(languages)
