@@ -31,7 +31,7 @@ languages = {
   }
 }
 
-languages[:oo]
+languages[:oo].merge(languages[:functional])
 binding.pry
 
 def reformat_languages(languages)
