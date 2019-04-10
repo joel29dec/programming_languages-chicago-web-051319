@@ -1,4 +1,4 @@
-lan = languages = {
+languages = {
   :oo => {
     :ruby => {
       :type => "interpreted"
@@ -31,7 +31,7 @@ lan = languages = {
 }
 
 def programming_languages
-  
+  languages[:oo]
 end
 
 def reformat_languages(languages)
