@@ -36,8 +36,13 @@ combined = languages[:oo].merge(languages[:functional])
 languages[:oo].map do |k, v| 
   if combined.include?(k) 
   combined[k].merge!(:style => [:oo]) 
+    end
   end
-end
+languages[:functional].map do |k, v| 
+  if combined.include?(k) 
+  combined[k].merge!(:style => [:functional]) 
+    end
+  end  
 binding.pry
 k.each {|k, v| puts v}
 
