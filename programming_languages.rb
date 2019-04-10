@@ -37,6 +37,7 @@ languages[:oo].each do |k, v|
   if combined.include?(k) 
   puts combined[k] 
   end
+end
 binding.pry
 k.each {|k, v| puts v}
 
